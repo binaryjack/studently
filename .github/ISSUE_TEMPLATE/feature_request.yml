@@ -1,0 +1,71 @@
+name: Feature Request
+description: Suggest a new capability, improvement, or enhancement.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Great ideas drive this project. Please describe your request clearly — the more context you give, the faster we can evaluate it.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the project does this affect?
+      options:
+        - "packages/* (shared library)"
+        - "apps/* (application)"
+        - "Developer experience / docs"
+        - "CI / tooling"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority_signal
+    attributes:
+      label: How important is this to you?
+      options:
+        - "Nice to have"
+        - "Would significantly improve my workflow"
+        - "Blocking my adoption / use case"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem does this solve? What can't you do today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed solution
+      description: Describe your idea. Include rough API / config sketches if you have them.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you have considered
+      description: Did you find any workarounds? Are there other tools that do this?
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Anything else — links, screenshots, related issues.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission checklist
+      options:
+        - label: I have searched existing issues and this has not been requested before.
+          required: true
