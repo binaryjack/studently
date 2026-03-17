@@ -1,0 +1,24 @@
+/**
+ * Permission
+ * Fine-grained permission that can be assigned to roles
+ * Format: "{resource}:{action}"
+ */
+
+import { BaseEntity } from "../common/BaseEntity";
+
+export interface Permission extends BaseEntity {
+  /** Permission name (unique, e.g., "student:view", "timesheet:approve") */
+  name: string;
+
+  /** Human-readable description */
+  description: string;
+
+  /** Resource being acted upon (e.g., "student", "timesheet", "document") */
+  resource: string;
+
+  /** Action being performed */
+  action: "view" | "create" | "update" | "delete" | "execute";
+
+  /** Scope of action */
+  scope: "own" | "team" | "organization" | "global";
+}

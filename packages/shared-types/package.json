@@ -1,0 +1,37 @@
+{
+  "name": "@studently/shared-types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript interfaces and types for all Studently packages and applications",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./dist/index.cjs"
+    },
+    "./auth": "./src/auth/index.ts",
+    "./user": "./src/user/index.ts",
+    "./student": "./src/student/index.ts",
+    "./learning": "./src/learning/index.ts",
+    "./timesheet": "./src/timesheet/index.ts",
+    "./absence": "./src/absence/index.ts",
+    "./document": "./src/document/index.ts",
+    "./workflow": "./src/workflow/index.ts",
+    "./common": "./src/common/index.ts",
+    "./errors": "./src/errors/index.ts"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {},
+  "files": [
+    "src",
+    "dist",
+    "README.md"
+  ]
+}
