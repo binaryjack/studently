@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project>
+    <name>Your Project Name</name>
+    <version>1.0.0</version>
+    <description>Project description here</description>
+    
+    <technology-stack>
+      <language>TypeScript</language>
+      <runtime>Node.js 18+</runtime>
+      <framework><!-- Add framework if applicable --></framework>
+      <package-manager>npm / pnpm</package-manager>
+    </technology-stack>
+    
+    <structure>
+      <directory path="src" description="Source code" />
+      <directory path="src/.ai" description="AI guidance files" />
+      <directory path="tests" description="Test files" />
+      <directory path=".github/ai" description="Architecture configuration" />
+    </structure>
+    
+    <capabilities>
+      <capability name="type-safety">Full TypeScript with strict mode</capability>
+      <capability name="testing">Jest with 95% coverage requirement</capability>
+      <capability name="linting">ESLint for code quality</capability>
+      <capability name="performance">Optimized for <=10% solid-js benchmark</capability>
+    </capabilities>
+    
+    <entry-points>
+      <entry path="src/index.ts" type="main" description="Main export" />
+    </entry-points>
+  </project>
+</manifest>

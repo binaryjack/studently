@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ai-system-index>
+  <meta>
+    <version>1.0</version>
+    <mode>ULTRA_HIGH_STRICT</mode>
+    <temperature>0</temperature>
+    <verbosity>0</verbosity>
+    <communication>BRUTAL_TRUTH</communication>
+  </meta>
+  
+  <read-order priority="sequential">
+    <document priority="1" type="quick-reference">
+      <name>QUICK-START.md</name>
+      <path>.github/ai/QUICK-START.md</path>
+      <purpose>Immediate rules overview - read FIRST</purpose>
+      <read-time>2 minutes</read-time>
+    </document>
+    
+    <document priority="2" type="system-behavior">
+      <name>system-instructions.xml</name>
+      <path>.github/ai/system-instructions.xml</path>
+      <purpose>Complete behavioral rules and strictness requirements</purpose>
+      <read-time>5 minutes</read-time>
+    </document>
+    
+    <document priority="3" type="architecture">
+      <name>architecture-rules.xml</name>
+      <path>.github/ai/architecture-rules.xml</path>
+      <purpose>Code patterns and structure enforcement</purpose>
+      <read-time>3 minutes</read-time>
+    </document>
+    
+    <document priority="4" type="quality">
+      <name>quality-gates.xml</name>
+      <path>.github/ai/quality-gates.xml</path>
+      <purpose>Quality thresholds and validation gates</purpose>
+      <read-time>2 minutes</read-time>
+    </document>
+    
+    <document priority="5" type="workflow">
+      <name>pipeline.xml</name>
+      <path>.github/ai/pipeline.xml</path>
+      <purpose>Build and deployment workflow</purpose>
+      <read-time>2 minutes</read-time>
+    </document>
+    
+    <document priority="6" type="manifest">
+      <name>manifest.xml</name>
+      <path>.github/ai/manifest.xml</path>
+      <purpose>Project structure and capabilities</purpose>
+      <read-time>1 minute</read-time>
+    </document>
+  </read-order>
+  
+  <critical-rules summary="true">
+    <rule>Temperature: 0 (factual only, zero speculation)</rule>
+    <rule>Verbosity: 0 (minimum words, maximum info)</rule>
+    <rule>Communication: Brutal truth (no softening)</rule>
+    <rule>Uncertain? State it immediately</rule>
+    <rule>Unknown? State it immediately</rule>
+    <rule>File naming: kebab-case ONLY</rule>
+    <rule>Type safety: 'any' FORBIDDEN</rule>
+    <rule>File structure: ONE export per file</rule>
+    <rule>Functions: export const Name = function() pattern</rule>
+    <rule>Classes: FORBIDDEN</rule>
+    <rule>Arrow functions: FORBIDDEN at module level</rule>
+    <rule>Testing: 95% coverage MINIMUM</rule>
+    <rule>Quality gates: ALL must pass - ZERO tolerance</rule>
+  </critical-rules>
+  
+  <quick-validation checklist="pre-commit">
+    <item>kebab-case file names</item>
+    <item>One export per file</item>
+    <item>Zero 'any' types</item>
+    <item>Zero classes</item>
+    <item>Zero module-level arrows</item>
+    <item>Explicit return types</item>
+    <item>Explicit parameter types</item>
+    <item>Types in *.types.ts</item>
+    <item>Tests >= 95% coverage</item>
+    <item>Zero TS errors</item>
+    <item>Zero lint errors</item>
+    <item>Zero security vulnerabilities</item>
+  </quick-validation>
+  
+  <entry-point>
+    <instruction>Read QUICK-START.md first</instruction>
+    <instruction>Apply system-instructions.xml rules immediately</instruction>
+    <instruction>Enforce ULTRA_HIGH strictness - NO EXCEPTIONS</instruction>
+    <instruction>Reject violations IMMEDIATELY</instruction>
+  </entry-point>
+  
+</ai-system-index>
