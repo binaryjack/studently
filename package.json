@@ -13,7 +13,7 @@
     "clean": "pnpm -r run clean"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
+    "@types/node": "^25.5.0",
     "typescript": "^5.9.0"
   },
   "packageManager": "pnpm@9.15.0"
