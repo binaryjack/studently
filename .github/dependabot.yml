@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # ── npm / pnpm workspace ─────────────────────────────────────────────────
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    ignore:
+      - dependency-name: "@studently/*"
+
+  # ── GitHub Actions ───────────────────────────────────────────────────────
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
