@@ -1,12 +1,8 @@
 /**
- * Common exports
+ * Common Domain Type Definitions - Barrel Export
+ * Reexports all common types for convenience
  */
 
-export type { BaseEntity } from "./base-entity";
-export type { PaginationParams } from "./pagination-params";
-export type { PaginationResponse } from "./pagination-response";
-
-// Common types and enums - one per file
 export type { DayOfWeek } from "./day-of-week";
 export type { ProficiencyLevel } from "./proficiency-level";
 export type { OrganizationalScope } from "./organizational-scope";

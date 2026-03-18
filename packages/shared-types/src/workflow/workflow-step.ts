@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { WorkflowActionType } from "./WorkflowActionType";
 
 export interface WorkflowStep extends BaseEntity {
   /** FK: Reference to Workflow */
@@ -20,7 +21,7 @@ export interface WorkflowStep extends BaseEntity {
   description: string;
 
   /** Type of action performed at this step */
-  actionType: "decision" | "task" | "notification" | "webhook";
+  actionType: WorkflowActionType;
 
   /** Array of User or Role IDs assigned to this step */
   assignedTo: string[];

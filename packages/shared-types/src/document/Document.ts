@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { DocumentVisibility } from "./types";
 
 export interface Document extends BaseEntity {
   /** Document title */
@@ -38,7 +39,7 @@ export interface Document extends BaseEntity {
   ownerId: string;
 
   /** Access visibility level */
-  visibility: "private" | "team" | "organization" | "public";
+  visibility: DocumentVisibility;
 
   /** ISO8601 timestamp when document expires - optional */
   expiresAt: string | null;

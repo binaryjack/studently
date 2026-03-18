@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { ProgressLevel } from "./types";
 
 export interface StudentProgress extends BaseEntity {
   /** FK: Reference to Student */
@@ -13,8 +14,8 @@ export interface StudentProgress extends BaseEntity {
   /** FK: Reference to Competency */
   competencyId: string;
 
-  /** Achievement level */
-  levelAchieved: "beginner" | "intermediate" | "advanced" | "expert";
+  /** Proficiency level achieved */
+  levelAchieved: ProgressLevel;
 
   /** Progress percentage (0-100) */
   progressPercentage: number;

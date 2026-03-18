@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { StudentStatus } from "./types";
 
 export interface Student extends BaseEntity {
   /** FK: Reference to User */
@@ -17,7 +18,7 @@ export interface Student extends BaseEntity {
   learningPathId: string;
 
   /** Student enrollment status */
-  status: "enrolled" | "in-progress" | "completed" | "suspended" | "graduated";
+  status: StudentStatus;
 
   /** ISO8601 date of enrollment */
   enrollmentDate: string;

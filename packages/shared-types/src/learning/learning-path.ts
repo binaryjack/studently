@@ -4,7 +4,8 @@
  * One LearningPath contains many LearningModules
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
+import { LearningLevel } from "./learning-level";
 
 export interface LearningPath extends BaseEntity {
   /** Name of learning path */
@@ -17,7 +18,7 @@ export interface LearningPath extends BaseEntity {
   code: string;
 
   /** Difficulty level */
-  level: "foundation" | "intermediate" | "advanced" | "specialized";
+  level: LearningLevel;
 
   /** Expected duration in weeks */
   duration: number;

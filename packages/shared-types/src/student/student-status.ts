@@ -4,14 +4,15 @@
  * FK: Student.id, User.id (changedBy)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
+import { StudentStatusState } from "./student-status-state";
 
 export interface StudentStatus extends BaseEntity {
   /** FK: Reference to Student */
   studentId: string;
 
-  /** Current status */
-  status: "active" | "on-leave" | "suspended" | "completed" | "withdrawn";
+  /** Current status state */
+  status: StudentStatusState;
 
   /** Reason for status change */
   reason: string | null;

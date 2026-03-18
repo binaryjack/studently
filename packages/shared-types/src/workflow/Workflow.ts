@@ -4,7 +4,8 @@
  * FK: User.id (createdBy)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
+import { WorkflowTemplateType } from "./workflow-template-type";
 
 export interface Workflow extends BaseEntity {
   /** Workflow name */
@@ -17,7 +18,7 @@ export interface Workflow extends BaseEntity {
   code: string;
 
   /** Type of workflow */
-  type: "approval" | "task-assignment" | "notification" | "integration";
+  type: WorkflowTemplateType;
 
   /** Event that triggers workflow (e.g., "timesheet:submitted") */
   trigger: string;

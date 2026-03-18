@@ -1,13 +1,7 @@
 /**
- * Workflow domain exports
+ * Workflow Domain Type Definitions - Barrel Export
  */
 
-export type { Workflow } from "./workflow";
-export type { WorkflowStep } from "./workflow-step";
-export type { WorkflowInstance } from "./workflow-instance";
-export type { WorkflowStepInstance } from "./workflow-step-instance";
-
-// Workflow domain types - one per file
 export type { WorkflowTemplateType } from "./workflow-template-type";
 export type { WorkflowActionType } from "./workflow-action-type";
 export type { WorkflowExecutionStatus } from "./workflow-execution-status";

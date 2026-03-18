@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { TimesheetStatus } from "./types";
 
 export interface Timesheet extends BaseEntity {
   /** FK: Reference to Student */
@@ -20,7 +21,7 @@ export interface Timesheet extends BaseEntity {
   totalHours: number;
 
   /** Timesheet approval status */
-  status: "draft" | "submitted" | "approved" | "rejected";
+  status: TimesheetStatus;
 
   /** FK: Reference to User who approved - optional */
   approvedBy: string | null;

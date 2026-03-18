@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { PreferredLanguage } from "./types";
 
 export interface UserProfile extends BaseEntity {
   /** FK: Reference to User (same ID) */
@@ -38,7 +39,7 @@ export interface UserProfile extends BaseEntity {
   timezone: string; // Default: "Europe/Zurich"
 
   /** Preferred language */
-  preferredLanguage: "de-CH" | "fr-CH" | "it-CH" | "en";
+  preferredLanguage: PreferredLanguage;
 
   /** Dark mode enabled */
   darkModeEnabled: boolean; // Default: true

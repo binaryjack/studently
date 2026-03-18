@@ -4,7 +4,8 @@
  * Swiss vocational standards based
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
+import { CompetencyLevel } from "./competency-level";
 
 export interface Competency extends BaseEntity {
   /** Competency name */
@@ -20,7 +21,7 @@ export interface Competency extends BaseEntity {
   category: string;
 
   /** Proficiency level */
-  level: "foundation" | "intermediate" | "advanced" | "expert";
+  level: CompetencyLevel;
 
   /** Assessment methods for this competency */
   assessmentMethods: string[];

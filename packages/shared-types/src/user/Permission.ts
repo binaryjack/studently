@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { PermissionAction, PermissionScope } from "./types";
 
 export interface Permission extends BaseEntity {
   /** Permission name (unique, e.g., "student:view", "timesheet:approve") */
@@ -17,8 +18,8 @@ export interface Permission extends BaseEntity {
   resource: string;
 
   /** Action being performed */
-  action: "view" | "create" | "update" | "delete" | "execute";
+  action: PermissionAction;
 
   /** Scope of action */
-  scope: "own" | "team" | "organization" | "global";
+  scope: PermissionScope;
 }

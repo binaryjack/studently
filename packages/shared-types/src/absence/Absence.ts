@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { AbsenceDuration, AbsenceStatus } from "./types";
 
 export interface Absence extends BaseEntity {
   /** FK: Reference to Student */
@@ -17,10 +18,10 @@ export interface Absence extends BaseEntity {
   type: string;
 
   /** Duration of absence */
-  duration: "half-day" | "full-day";
+  duration: AbsenceDuration;
 
   /** Absence approval status */
-  status: "pending" | "approved" | "rejected";
+  status: AbsenceStatus;
 
   /** Reason for absence */
   reason: string | null;

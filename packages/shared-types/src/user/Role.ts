@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { RoleType } from "./types";
 
 export interface Role extends BaseEntity {
   /** Role name (unique, e.g., "Student", "Instructor", "Admin") */
@@ -17,7 +18,7 @@ export interface Role extends BaseEntity {
   permissions: string[];
 
   /** System vs custom role */
-  type: "system" | "custom";
+  type: RoleType;
 
   /** Whether role is active and assignable */
   isActive: boolean;

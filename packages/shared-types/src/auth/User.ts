@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { UserStatus } from "./types";
 
 export interface User extends BaseEntity {
   /** User email address (unique, immutable) */
@@ -20,7 +21,7 @@ export interface User extends BaseEntity {
   passwordHash: string;
 
   /** User account status */
-  status: "active" | "inactive" | "suspended" | "deleted";
+  status: UserStatus;
 
   /** Whether email has been verified */
   emailVerified: boolean;

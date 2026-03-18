@@ -4,7 +4,9 @@
  * FK: LearningModule.id
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
+import { BloomLevel } from "./bloom-level";
+import { LearningAssessmentMethod } from "./learning-assessment-method";
 
 export interface LearningObjective extends BaseEntity {
   /** FK: Reference to LearningModule */
@@ -14,10 +16,10 @@ export interface LearningObjective extends BaseEntity {
   description: string;
 
   /** Bloom's Taxonomy level */
-  bloomLevel: "remember" | "understand" | "apply" | "analyze" | "evaluate" | "create";
+  bloomLevel: BloomLevel;
 
   /** How the objective is assessed */
-  assessmentMethod: "quiz" | "project" | "presentation" | "practical" | "portfolio";
+  assessmentMethod: LearningAssessmentMethod;
 
   /** Success criteria for this objective */
   successCriteria: string[];

@@ -5,6 +5,7 @@
  */
 
 import { BaseEntity } from "../common/BaseEntity";
+import { DayOfWeek, WorkType } from "./types";
 
 export interface TimesheetEntry extends BaseEntity {
   /** FK: Reference to Timesheet */
@@ -14,7 +15,7 @@ export interface TimesheetEntry extends BaseEntity {
   date: string;
 
   /** Day of week */
-  dayOfWeek: "monday" | "tuesday" | "wednesday" | "thursday" | "friday" | "saturday" | "sunday";
+  dayOfWeek: DayOfWeek;
 
   /** ISO8601 clock-in time */
   clockInTime: string;
@@ -29,7 +30,7 @@ export interface TimesheetEntry extends BaseEntity {
   totalHours: number;
 
   /** Type of work performed */
-  workType: "theoretical" | "practical" | "project" | "break";
+  workType: WorkType;
 
   /** Description of work performed - optional */
   description: string | null;

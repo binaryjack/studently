@@ -1,11 +1,7 @@
 /**
- * Timesheet domain exports
+ * Timesheet Domain Type Definitions - Barrel Export
  */
 
-export type { Timesheet } from "./timesheet";
-export type { TimesheetEntry } from "./timesheet-entry";
-
-// Timesheet domain types - one per file
 export type { TimesheetDayOfWeek } from "./timesheet-day-of-week";
 export type { WorkType } from "./work-type";
 export type { TimesheetSubmissionStatus } from "./timesheet-submission-status";

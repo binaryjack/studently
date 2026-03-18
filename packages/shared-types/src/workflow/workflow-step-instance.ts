@@ -3,6 +3,8 @@
  * Execution state of a single workflow step
  */
 
+import { WorkflowStepExecutionStatus } from "./WorkflowStepExecutionStatus";
+
 export interface WorkflowStepInstance {
   /** Step ID from workflow definition */
   stepId: string;
@@ -11,7 +13,7 @@ export interface WorkflowStepInstance {
   sequence: number;
 
   /** Step execution status */
-  status: "pending" | "in-progress" | "completed" | "failed" | "skipped";
+  status: WorkflowStepExecutionStatus;
 
   /** Assigned user/role who executed step */
   assignedTo: string;

@@ -3,6 +3,8 @@
  * Request parameters for paginated API endpoints
  */
 
+import { SortOrder } from "./types";
+
 export interface PaginationParams {
   /** Page number (1-indexed) */
   page: number;
@@ -14,7 +16,7 @@ export interface PaginationParams {
   sortBy?: string;
 
   /** Sort direction */
-  sortOrder?: "asc" | "desc";
+  sortOrder?: SortOrder;
 
   /** Search query string */
   search?: string;

@@ -6,6 +6,7 @@
 
 import { BaseEntity } from "../common/BaseEntity";
 import { WorkflowStepInstance } from "./WorkflowStepInstance";
+import { WorkflowExecutionStatus } from "./WorkflowExecutionStatus";
 
 export interface WorkflowInstance extends BaseEntity {
   /** FK: Reference to Workflow definition */
@@ -21,7 +22,7 @@ export interface WorkflowInstance extends BaseEntity {
   currentStep: number;
 
   /** Overall workflow status */
-  status: "pending" | "in-progress" | "completed" | "failed" | "cancelled";
+  status: WorkflowExecutionStatus;
 
   /** ISO8601 timestamp when workflow started */
   startedAt: string;
