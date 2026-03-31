@@ -4,7 +4,7 @@
  * FK: Timesheet.id, User.id (validatedBy)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { DayOfWeek, WorkType } from "./types";
 
 export interface TimesheetEntry extends BaseEntity {

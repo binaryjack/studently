@@ -4,7 +4,7 @@
  * FKs: Student.id, Competency.id, User.id (assessor)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { ProgressLevel } from "./types";
 
 export interface StudentProgress extends BaseEntity {

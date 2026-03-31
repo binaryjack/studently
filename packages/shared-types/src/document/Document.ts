@@ -4,7 +4,7 @@
  * FK: DocumentType.id, DocumentCategory.id, User.id (uploadedBy), Student/User.id (ownerId)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { DocumentVisibility } from "./types";
 
 export interface Document extends BaseEntity {

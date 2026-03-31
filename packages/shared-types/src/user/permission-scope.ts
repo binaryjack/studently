@@ -4,6 +4,6 @@
  * Alias to OrganizationalScope for domain-specific naming
  */
 
-import { OrganizationalScope } from "../common/OrganizationalScope";
+import { OrganizationalScope } from "../common/organizational-scope";
 
 export type PermissionScope = OrganizationalScope;

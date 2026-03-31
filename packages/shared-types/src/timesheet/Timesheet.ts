@@ -4,7 +4,7 @@
  * FK: Student.id, User.id (approvedBy)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { TimesheetStatus } from "./types";
 
 export interface Timesheet extends BaseEntity {

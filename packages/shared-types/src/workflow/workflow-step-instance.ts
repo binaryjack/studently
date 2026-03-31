@@ -3,7 +3,7 @@
  * Execution state of a single workflow step
  */
 
-import { WorkflowStepExecutionStatus } from "./WorkflowStepExecutionStatus";
+import { WorkflowStepExecutionStatus } from "./workflow-step-execution-status";
 
 export interface WorkflowStepInstance {
   /** Step ID from workflow definition */

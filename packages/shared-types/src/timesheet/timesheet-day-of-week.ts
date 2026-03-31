@@ -4,6 +4,6 @@
  * Alias to DayOfWeek from common
  */
 
-import { DayOfWeek } from "../common/DayOfWeek";
+import { DayOfWeek } from "../common/day-of-week";
 
 export type TimesheetDayOfWeek = DayOfWeek;

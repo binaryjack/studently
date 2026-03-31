@@ -4,8 +4,8 @@
  * FK: Workflow.id, User.id/Role.id (assignedTo)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
-import { WorkflowActionType } from "./WorkflowActionType";
+import { BaseEntity } from "../common/base-entity";
+import { WorkflowActionType } from "./workflow-action-type";
 
 export interface WorkflowStep extends BaseEntity {
   /** FK: Reference to Workflow */

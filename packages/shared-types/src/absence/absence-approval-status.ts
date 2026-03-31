@@ -4,6 +4,6 @@
  * Alias to ApprovalStatus for domain-specific naming
  */
 
-import { ApprovalStatus } from "../common/ApprovalStatus";
+import { ApprovalStatus } from "../common/approval-status";
 
 export type AbsenceApprovalStatus = ApprovalStatus;

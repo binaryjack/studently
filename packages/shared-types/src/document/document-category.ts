@@ -3,7 +3,7 @@
  * Category/tag for grouping documents
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 
 export interface DocumentCategory extends BaseEntity {
   /** Category name (unique) */

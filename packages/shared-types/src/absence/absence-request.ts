@@ -4,7 +4,7 @@
  * FK: Student.id, AbsenceType.id, User.id (decidedBy)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 
 export interface AbsenceRequest extends BaseEntity {
   /** FK: Reference to Student */

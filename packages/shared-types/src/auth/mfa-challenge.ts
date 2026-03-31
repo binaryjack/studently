@@ -4,7 +4,7 @@
  * FK: User.id
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 
 export interface MFAChallenge extends BaseEntity {
   /** FK: Reference to User */

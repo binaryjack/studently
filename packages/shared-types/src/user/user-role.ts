@@ -5,7 +5,7 @@
  * FKs: User.id, Role.id
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 
 export interface UserRole extends BaseEntity {
   /** FK: Reference to User */

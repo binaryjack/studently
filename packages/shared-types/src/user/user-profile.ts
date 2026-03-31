@@ -4,7 +4,7 @@
  * FK: User.id
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { PreferredLanguage } from "./types";
 
 export interface UserProfile extends BaseEntity {

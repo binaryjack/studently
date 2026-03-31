@@ -4,7 +4,7 @@
  * FK: LearningPath.id, User.id (instructor)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 
 export interface LearningModule extends BaseEntity {
   /** FK: Reference to LearningPath */

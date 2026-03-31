@@ -4,7 +4,7 @@
  * FKs: User.id, LearningPath.id, Company.id, User.id (instructor), User.id (mentor)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { StudentStatus } from "./types";
 
 export interface Student extends BaseEntity {

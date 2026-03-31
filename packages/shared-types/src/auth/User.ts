@@ -4,7 +4,7 @@
  * Base for all roles: Student, Instructor, Employer, Admin, Official
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { UserStatus } from "./types";
 
 export interface User extends BaseEntity {

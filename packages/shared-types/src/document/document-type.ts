@@ -3,7 +3,7 @@
  * Classification of document (certificate, diploma, transcript, etc.)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 
 export interface DocumentType extends BaseEntity {
   /** Document type name (unique, e.g., "certificate", "diploma") */

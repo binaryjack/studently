@@ -4,7 +4,7 @@
  * Links to multiple Permissions
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { RoleType } from "./types";
 
 export interface Role extends BaseEntity {

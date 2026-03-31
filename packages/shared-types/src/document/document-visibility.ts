@@ -4,6 +4,6 @@
  * Alias to VisibilityLevel for domain-specific naming
  */
 
-import { VisibilityLevel } from "../common/VisibilityLevel";
+import { VisibilityLevel } from "../common/visibility-level";
 
 export type DocumentVisibility = VisibilityLevel;

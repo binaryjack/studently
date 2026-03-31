@@ -4,6 +4,6 @@
  * Alias to ActivityType for domain-specific naming
  */
 
-import { ActivityType } from "../common/ActivityType";
+import { ActivityType } from "../common/activity-type";
 
 export type WorkType = ActivityType;

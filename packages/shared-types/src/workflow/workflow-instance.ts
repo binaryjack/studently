@@ -4,9 +4,9 @@
  * FK: Workflow.id, User.id (triggeredBy)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
-import { WorkflowStepInstance } from "./WorkflowStepInstance";
-import { WorkflowExecutionStatus } from "./WorkflowExecutionStatus";
+import { BaseEntity } from "../common/base-entity";
+import { WorkflowStepInstance } from "./workflow-step-instance";
+import { WorkflowExecutionStatus } from "./workflow-execution-status";
 
 export interface WorkflowInstance extends BaseEntity {
   /** FK: Reference to Workflow definition */

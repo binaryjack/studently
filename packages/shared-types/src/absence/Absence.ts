@@ -4,7 +4,7 @@
  * FK: Student.id, AbsenceType.id, User.id (approvedBy)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { AbsenceDuration, AbsenceStatus } from "./types";
 
 export interface Absence extends BaseEntity {

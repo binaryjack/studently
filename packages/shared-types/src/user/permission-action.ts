@@ -4,6 +4,6 @@
  * Alias to CRUDAction for domain-specific naming
  */
 
-import { CRUDAction } from "../common/CRUDAction";
+import { CRUDAction } from "../common/crud-action";
 
 export type PermissionAction = CRUDAction;

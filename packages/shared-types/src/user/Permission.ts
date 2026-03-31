@@ -4,7 +4,7 @@
  * Format: "{resource}:{action}"
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 import { PermissionAction, PermissionScope } from "./types";
 
 export interface Permission extends BaseEntity {

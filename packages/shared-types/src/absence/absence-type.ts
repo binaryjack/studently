@@ -3,7 +3,7 @@
  * Type/category of absence (sick leave, vacation, personal, etc.)
  */
 
-import { BaseEntity } from "../common/BaseEntity";
+import { BaseEntity } from "../common/base-entity";
 
 export interface AbsenceType extends BaseEntity {
   /** Absence type name (unique, e.g., "sick-leave", "vacation") */
